@@ -1,7 +1,7 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/taskflow_task_db
+      uri: mongodb+srv://dvish2003:Vishan2003%23%23%23@cluster0.ijybos0.mongodb.net/taskflow_task_db?appName=Cluster0
       
 jwt:
   secret: 496a84eb827a44f4ac1c3c3a9d701ed6496a84eb827a44f4ac1c3c3a9d701ed6
