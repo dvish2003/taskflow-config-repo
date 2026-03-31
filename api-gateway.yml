@@ -1,21 +1,19 @@
 spring:
   cloud:
     gateway:
-      server:
-        webflux:
-          discovery:
-            locator:
-              enabled: true
-              lower-case-service-id: true
-          routes:
-            - id: user-service
-              uri: lb://user-service
-              predicates:
-                - Path=/api/users/**
-            - id: task-service
-              uri: lb://task-service
-              predicates:
-                - Path=/api/tasks/**
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/api/users/**
+        - id: task-service
+          uri: lb://task-service
+          predicates:
+            - Path=/api/tasks/**
 
 management:
   endpoints:
